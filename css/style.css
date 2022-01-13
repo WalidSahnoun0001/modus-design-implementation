@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+body {
+    height: 2000px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav figure img {
+    width: 140px;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #333333ed;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .3s ease-in-out;
+}
+header nav ul li a:hover {
+    color: #05c7fb;
+}
+main section {
+    position: relative;
+    min-height: 80vh;
+    background-position: center;
+}
+main section .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+main section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+main section .content p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+main section .content h2 {
+    font-size: 30px;
+}
+main section .content button {
+    margin: 30px 5px 0 ;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 8px 0;
+    width: 130px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main section .content button.diff {
+    background-color: #05c7fb;
+    border: 2px solid #05c7fb;
+}
+main .portfolio {
+    padding: 60px 0;
+    background-color: #eee;
+}
+main .portfolio .content {
+    text-align: center;
+    padding: 50px 0;
+}
+main .portfolio .content h2 {
+    color: #333;
+}
+.line {
+    width: 80px;
+    height: 3px;
+    background-color: #05c7fb;
+    margin: 30px auto;  
+}
+.line::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 2px solid #05c7fb;
+    transform: rotate(45deg);
+    margin: -5px;
+}
+main .portfolio .content p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2;
+    color: rgba(51, 51, 51, 0.671);
+}
+main .portfolio .images {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .portfolio .images figure img {
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+main .features {
+    background-color: #eee;
+    margin-top: -15px;
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main .features .feature {
+    width: 280px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 40px;
+}
+main .features .feature i {
+    font-size: 30px;
+    color: #333;
+}
+main .features .feature h2 {
+    color: #333;
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-weight: bold;
+}   
+.line-two {
+    background-color: #05c7fb;
+    width: 20px;
+    height: 4px;
+}
+main .features .feature .line-two {
+    margin: 20px auto;
+}
+main .features .feature p {
+    color: rgba(51, 51, 51, 0.67);
+    font-size: 14px;
+    line-height: 1.8;
+}
+main .clients {
+    padding: 50px 0;
+    text-align: center;
+}
+main .clients h2 {
+    color: #333;
+    text-transform: capitalize;
+    font-weight: bold;    
+}
+main .clients p {
+    width: 50%;
+    margin: 30px auto;
+    line-height: 2;
+    color: rgba(51, 51, 51, 0.67);
+}
+main .clients .icons i {
+    font-size: 40px;
+    margin: 20px 40px;
+    color: #333;
+    cursor: pointer;
+}
+main .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0 0 0 / 93%);
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+main .infos .about {
+    width: 35%;
+    height: 450px;
+    text-align: center;
+    border: 2px solid #eee;
+    padding: 50px 0;
+}
+main .infos .about .line-two {
+    margin: 30px auto;
+}
+main .infos .about h2 {
+    color: #fff;
+}
+main .infos .about p {
+    width: 70%;
+    line-height: 2;
+    margin: 0 auto;
+    color: #eee;
+}
+main .infos .contact {
+    width: 35%;
+    height: 450px;  
+    text-align: center;
+    border: 2px solid #eee;
+    padding: 50px 0;
+}
+main .infos .contact h2 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+main .infos .contact input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 30px auto;
+    background: none;
+    color: #fff;
+}
+main .infos .contact input::placeholder,
+main .infos .contact textarea::placeholder {
+    color: #fff;
+}
+main .infos .contact textarea {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin: 30px 0;
+    background: none;
+    color: #fff;
+}
+main .infos .contact button {
+    color: #05c7fb;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    font-weight: bold;
+}
+main footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #05c7fb;
+    padding: 20px 0;
+}
+main footer .copyright {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+main footer .social-media a {
+    color: #fff;
+    margin: 5px 10px;
+}
+header nav .menu-bars {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: none;
+}
+header nav .menu-bars span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+header nav .menu-bars span:nth-child(2) {
+    margin-top: 8px;
+}
+header nav .menu-bars span:nth-child(3) {
+   margin-top: 16px;
+}
+.on {
+    height: auto;
+    display: block;
+    animation: moveDown .3s ease-in-out;
+}
+@media (max-width: 575.98px) {
+    header nav .menu-bars {
+        display: block;
+    }
+    header nav ul {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 60px;
+        z-index: 9;
+        background-color: #05c7fb;
+        height: 0;
+        display: none;
+    }
+    header nav ul li {
+        display: block;
+        margin: 14px 0;
+    }
+    header nav ul li a {
+        color: #fff;
+    }
+    main .portfolio .content p {
+        width: 75%;
+    }
+    main .clients p {
+        width: 90%;
+    }
+    main .infos {
+        display: block;
+    }
+    main .infos .about,
+    main .infos .contact {
+        width: 90%;
+        height: 480px;
+        margin: 20px auto;
+    }
+    main .infos .contact input,
+    main .infos .contact textarea {
+        width: 120px;
+    }
+    main .infos .about p {
+        line-height: 1.5;
+    }
+    
+}
+@media(min-width: 576px) and (max-width: 767.98px) {
+    main .portfolio .content p {
+        width: 95%;
+    }
+    main .infos {
+        display: block;
+    }
+    main .infos .about,
+    main .infos .contact {
+        width: 90%;
+        height: 480px;
+        margin: 20px auto;
+    }
+    main .infos .contact input,
+    main .infos .contact textarea {
+        width: 120px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991.98px) {
+    main .portfolio .content p {
+        width: 85%;
+    }
+    main .infos {
+        display: block;
+    }
+    main .infos .about,
+    main .infos .contact {
+        width: 90%;
+        height: 480px;
+        margin: 20px auto;
+    }
+    main .infos .contact input,
+    main .infos .contact textarea {
+        width: 120px;
+    }
+}
+/* @media(min-width: 992px) and (max-width: 1199.98px) {
+
+}
+@media(min-width: 1200px) {
+
+} */
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    50% {
+        opacity: 0;
+        height: 11vh;
+    }
+    100% {
+        opacity: 1;
+        height: 22vh;
+    }
+}
