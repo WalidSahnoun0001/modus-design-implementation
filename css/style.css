@@ -252,6 +252,7 @@ main .infos .contact button {
     padding: 5px 10px;
     background-color: transparent;
     font-weight: bold;
+    cursor: pointer;
 }
 main footer {
     display: flex;
