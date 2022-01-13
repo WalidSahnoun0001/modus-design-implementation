@@ -1,2 +1,5 @@
 # modus-design-implementation
-Modus Design From Graphberry Implementation 
+##Implementation Modus Design From Graphberry  
+### Design From: https://www.graphberry.com/
+### Icons from: https://fontawesome.com/
+### Images from: https://unsplash.com/
